@@ -459,6 +459,8 @@ padding: 100px 0;
 
 .footer-logo .logo-parts {
     color: #f4f4fd;
+    margin-bottom: 16px;
+   
 }
 
 .footer-text {
@@ -471,6 +473,8 @@ padding: 100px 0;
     margin: 0;
     max-width: 264px;
     margin-right: 120px;
+    text-align: left;
+   
 }
 /* ===F=ooter socials ===*/
 .footer-socials {
@@ -483,6 +487,9 @@ padding: 100px 0;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-weight: 500;
+    text-align: left;
+
 
 }
 .footer-socials-list {
