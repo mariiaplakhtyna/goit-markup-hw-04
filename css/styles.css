@@ -362,6 +362,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+    position: relative;
+    overflow: hidden;
 }
 .project-list {
        display: flex;
@@ -376,19 +378,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-basis: calc((100% - 48px) / 3);
     background-color: #fff;
     overflow: hidden;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
  }
  
-.project-card-content {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-
-}
 
 .project-title {
     color: #2e2f42;
@@ -426,11 +422,19 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.5;
     padding: 40px 32px;
     position: absolute;
-    inset: 0;
-    background-color: rgba(77, 90, 229, 0.9);
+    top: 0;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
     letter-spacing: 0.02em;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card-content {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+
 }
 .project-card:hover .project-overlay-text,
 .project-card:focus-within .project-overlay-text {
@@ -491,8 +495,6 @@ padding: 100px 0;
     letter-spacing: 0.02em;
     font-weight: 500;
     margin-bottom: 16px;
-
-
 
 }
 .footer-socials-list {
