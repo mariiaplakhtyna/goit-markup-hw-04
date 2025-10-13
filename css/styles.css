@@ -448,11 +448,13 @@ padding: 100px 0;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    align-items: baseline;
 }
 .footer-left {
     display: flex;
     flex-direction: column;
     max-width: 264px;
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -488,6 +490,7 @@ padding: 100px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 500;
+    margin-bottom: 16px;
 
 
 
